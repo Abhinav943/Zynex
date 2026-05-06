@@ -12,6 +12,7 @@
 [![dependency count](https://badgen.net/bundlephobia/dependency-count/@abhinav943/zynex)](https://bundlephobia.com/package/@abhinav943/zynex)
 [![tree-shaking](https://badgen.net/bundlephobia/tree-shaking/@abhinav943/zynex)](https://bundlephobia.com/package/@abhinav943/zynex)
 [![View on GitHub](https://img.shields.io/badge/GitHub-Zynex-blue?logo=github)](https://github.com/Abhinav943/Zynex)
+[![Tests](https://img.shields.io/badge/tests-31%20passed-brightgreen.svg?style=flat-square)](https://github.com/Abhinav943/Zynex/actions)
 
 Zynex replaces messy Regex blocks with a fluent, chainable API. Instead of just returning `false` when a validation fails, Zynex returns a structured array of detailed errors, allowing you to tell your users exactly *why* their input was rejected.
 
@@ -80,6 +81,14 @@ The final execution always returns a consistent `ValidationResult` object:
   }>;
 }
 ```
+
+---
+
+## 🛡️ Battle-Tested
+
+Zynex is built with reliability as the top priority. The engine is fully tested using **Vitest**, covering both synchronous logic and asynchronous network checks (DNS/MX lookups). 
+
+We ensure that every validation rule, custom error message, and async fallback behaves predictably before any release.
 
 ---
 
@@ -216,6 +225,14 @@ import type {
   URLValidator
 } from '@abhinav943/zynex';
 ```
+
+---
+
+## 🤝 Contributing
+
+We welcome community contributions! Whether you want to add a new zero-dependency validator, fix a bug, or improve the documentation, we'd love your help.
+
+To ensure a smooth process, we have standardized our testing and Pull Request submission rules. Please read our [Contributing Guide](CONTRIBUTING.md) before opening a PR to see how to run the test suite and format your code.
 
 ---
 

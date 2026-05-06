@@ -107,6 +107,8 @@ export class EmailValidator {
     for (const task of this.asyncTasks) {
       await task();
     }
+    
+    this.asyncTasks = [];
     return this.execute();
   }
 }
