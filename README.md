@@ -226,6 +226,7 @@ import type {
   PasswordValidator,
   URLValidator
 } from '@abhinav943/zynex';
+```
 ---
 
 ## 🤝 Contributing
