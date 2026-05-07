@@ -28,8 +28,13 @@
   "author": "Abhinav",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@types/node": "^25.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
     "@vitest/coverage-v8": "^4.1.5",
+    "eslint": "^10.3.0",
     "fast-check": "^4.7.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
@@ -39,7 +44,11 @@
     "vitest": "^4.1.5"
   },
   "lint-staged": {
-    "**/*.{ts,js,json,md}": [
+    "**/*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.{json,md}": [
       "prettier --write"
     ]
   }
